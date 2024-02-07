@@ -1,5 +1,8 @@
 # st
 
 - alpha focus highlight
-- font2
+- anysize
+- boxdraw
+- clipboard
+- rightclickpaste
 - scrollback
