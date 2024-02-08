@@ -193,8 +193,8 @@ const unsigned int mousescrollincrement = 10;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument  release */
 	{ XK_ANY_MOD,           Button3, clippaste,      {.i = 0}, 1 },
-	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = mousescrollincrement}, },
-	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = mousescrollincrement}, },
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = mousescrollincrement}, 0, /* !alt */ -1 },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = mousescrollincrement}, 0, /* !alt */ -1 },
 	{ ControlMask,          Button4, zoom,           {.f = +1} },
 	{ ControlMask,          Button5, zoom,           {.f = -1} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
