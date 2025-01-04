@@ -2177,11 +2177,7 @@ run:
 	selinit();
 	if (isfullscreen) {
 		fullscreen(NULL);
-		cols = MAX(cols, 1);
-		rows = MAX(rows, 1);
-		tnew(cols, rows);
-		xinit(cols, rows);
-		selinit();
+		redraw();
 	}
 	run();
 
