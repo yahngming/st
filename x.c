@@ -787,6 +787,7 @@ fullscreen(const Arg *arg)
 	XSendEvent(xw.dpy, DefaultRootWindow(xw.dpy), False, SubstructureNotifyMask|SubstructureRedirectMask, &ev);
 
 	redraw();
+	xhints();
 }
 
 ushort
