@@ -2166,9 +2166,6 @@ run:
 	if (!opt_title)
 		opt_title = (opt_line || !opt_cmd) ? "st" : opt_cmd[0];
 
-	if (isfullscreen)
-		fullscreen(NULL);
-
 	setlocale(LC_CTYPE, "");
 	XSetLocaleModifiers("");
 	cols = MAX(cols, 1);
@@ -2178,6 +2175,10 @@ run:
 	xinit(cols, rows);
 	xsetenv();
 	selinit();
+	if (isfullscreen) {
+		fullscreen(NULL);
+		xinit(cols, rows);
+	}
 	run();
 
 	return 0;
