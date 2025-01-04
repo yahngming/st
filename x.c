@@ -785,9 +785,6 @@ fullscreen(const Arg *arg)
 	ev.xclient.data.l[1] = xw.netwmfullscreen;
 
 	XSendEvent(xw.dpy, DefaultRootWindow(xw.dpy), False, SubstructureNotifyMask|SubstructureRedirectMask, &ev);
-
-	redraw();
-	xhints();
 }
 
 ushort
