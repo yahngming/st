@@ -2104,6 +2104,7 @@ usage(void)
 int
 main(int argc, char *argv[])
 {
+	int isfullscreen = 0;
 	xw.l = xw.t = 0;
 	xw.isfixed = False;
 	xsetcursor(cursorshape);
@@ -2124,6 +2125,9 @@ main(int argc, char *argv[])
 		goto run;
 	case 'f':
 		opt_font = EARGF(usage());
+		break;
+	case 'F':
+		isfullscreen = 1;
 		break;
 	case 'g':
 		xw.gm = XParseGeometry(EARGF(usage()),
@@ -2171,6 +2175,8 @@ run:
 	xinit(cols, rows);
 	xsetenv();
 	selinit();
+	if (isfullscreen)
+		fullscreen(NULL);
 	run();
 
 	return 0;
