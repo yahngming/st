@@ -3,7 +3,7 @@
 st \- simple terminal
 .SH SYNOPSIS
 .B st
-.RB [ \-aiv ]
+.RB [ \-aiFv ]
 .RB [ \-c
 .IR class ]
 .RB [ \-f
@@ -27,7 +27,7 @@ st \- simple terminal
 .RI [ arguments ...]]
 .PP
 .B st
-.RB [ \-aiv ]
+.RB [ \-aiFv ]
 .RB [ \-c
 .IR class ]
 .RB [ \-f
@@ -62,6 +62,9 @@ defines the window class (default $TERM).
 defines the
 .I font
 to use when st is run.
+.TP
+.B \-F
+run in fullscreen.
 .TP
 .BI \-g " geometry"
 defines the X11 geometry string.
