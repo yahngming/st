@@ -4,5 +4,6 @@
 - anysize
 - boxdraw
 - clipboard
+- fullscreen
 - rightclickpaste
 - scrollback
