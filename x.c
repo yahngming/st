@@ -2181,6 +2181,7 @@ run:
 		rows = MAX(rows, 1);
 		tnew(cols, rows);
 		xinit(cols, rows);
+		selinit();
 	}
 	run();
 
