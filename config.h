@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=25:antialias=true:autohint=true";
+static char *font = "terminal:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
