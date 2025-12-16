@@ -1,6 +1,6 @@
 # st
 
-- alpha focus highlight
+- alphafocushighlight
 - anysize
 - boxdraw
 - fullscreen
